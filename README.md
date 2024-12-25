@@ -1,4 +1,4 @@
-# News-Article
+# News-Article-Webapp
 A news article web application. 
 
 Welcome to your one-stop platform for creating, updating, and viewing articles effortlessly.
@@ -34,6 +34,7 @@ Ensure **Node.js** & **npm** is installed on the system.
 On the home page, the application displays the title of the app and a brief description. Below this, two buttons allow the user to navigate to the desired functionality:
 
 **Create Article**: Opens a form to create a new article.
+
 **Update Article**: Opens a form to update an existing article.
 Depending on which button the user selects, the corresponding form is dynamically rendered.
 
@@ -71,18 +72,7 @@ The user can then edit any field and submit the changes. Before updating the art
 The application validates that all fields are filled.
 The updated details are saved to the database with the same Article ID, ensuring the article's identity remains unchanged.
 
-### Page 2: Fetch / Display News Articles
-Design a web page with a form to create or update news articles. The form should include the following fields for a news article:
-* Article Title (text input)
-* Article Summary (textarea)
-* Article date (date input)
-* Publisher Of Article (text input)
 
-When the form is submitted:
-* If all fields are filled, the article should be created or updated in the database.
-* If any field is missing, show appropriate error messages and prevent submission.
-* After successful submission, clear the form fields so that user can input next article
-* Provide a navigation link to the fetch/display page.
 
 ### Page 2: Fetch / Display News Articles
 Displays the total number of articles in the database at the top of the page.
@@ -92,16 +82,7 @@ Articles are displayed as cards, each showing:
 * Title of the article
 * Summary of the article in a bullet-point format
 
-Sample page design for guidance
-![Display Page Design](https://github.com/chunyang-hs/news-article/blob/master/sample-display-page-design.png)
 
-### Bonus (Optional):
-You may also consider adding the following features if times permit:
-* Include a refresh button to fetch the latest articles from the database.
-* Add delete functionality to remove articles from the database.
-* Implement pagination or infinite scrolling for fetching and displaying articles.
-* Add search functionality to filter articles based on specific criteria.
-* Use a state management library like Redux or MobX to manage the application's state.
 
 ## Final Notes
 Feel free to adjust the requirements and scope of the assignment according to your preferences and time constraints. 
