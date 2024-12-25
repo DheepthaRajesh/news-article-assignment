@@ -64,7 +64,7 @@ Other Fields:
 * Article Summary
 * Article Date
 * Publisher
-* 
+  
 Once the user enters the Article ID, the application retrieves the corresponding article from the database, and the other fields are **automatically populated** with the article's existing information.
 
 The user can then edit any field and submit the changes. Before updating the article:
@@ -82,10 +82,3 @@ Articles are displayed as cards, each showing:
 * Title of the article
 * Summary of the article in a bullet-point format
 
-
-
-## Final Notes
-Feel free to adjust the requirements and scope of the assignment according to your preferences and time constraints. 
-Remember to include clear instructions and any necessary information for running the application. 
-
-Good luck with your assignment, and feel free to ask any questions if you need further assistance!
