@@ -16,6 +16,10 @@ This web application is intuitive and user friendly & fulfills all the requireme
 * Includes robust error handling and validation for form submissions.
 * Adheres to best practices, ensuring clean and maintainable code.
 
+### Workflow Demonstration:
+
+To provide a clear understanding of the frontend workflow, a detailed screen recording has been included in this repository. This recording showcases the entire functionality and navigation of the application, highlighting how users can seamlessly interact with various features, including navigating between pages, and creating, updating, and viewing articles.
+
 ## Getting Started:
 
 #### Prerequisites:
