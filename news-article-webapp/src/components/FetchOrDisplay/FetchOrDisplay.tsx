@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Typography, Box, Card, CardContent} from '@mui/material';
+import { Typography, Box, Card, CardContent, Button} from '@mui/material';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 
 /* The header will display how many articles found/exist in database. 
 All articles will be displayed in a Card/Box format with Publisher name and date or article, followed by article's title, 
@@ -35,18 +36,59 @@ const FetchOrDisplay = () => {
   }, []);
 
   return (
-    <div
-    style={{
-        backgroundColor: '#b1dbe6', minHeight: '100vh', justifyContent:'center', alignItems:'center'
-      }}>
-        <div>
-            <Typography variant="h4" sx={{ paddingTop: 3, textAlign:'center', color:'black'}}>
-            Articles List
-        </Typography>
-        <Typography variant="h5" sx={{ marginTop: 1, textAlign:'center', color: 'blue'}}>
-        {articles.length} {articles.length === 1 ? 'Article' : 'Articles'} Found
-        </Typography>
-        </div>
+      <div
+          style={{
+              backgroundColor: '#b1dbe6',
+              minHeight: '100vh'
+          }}
+      >
+          <div
+              style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  marginBottom: '20px',
+                  paddingTop: 30
+              }}>
+              <div
+                style={{
+                    display: 'flex',
+                    flexDirection: 'row'
+                }}
+                >
+                <Link to="/">
+                <Button
+                    variant="contained"
+                    sx={{ backgroundColor: "#dd6a51", '&:hover': { transform: 'scale(1,1)' }, marginRight: 64, marginLeft: 5}}
+                >
+                    Go to Update Article
+                </Button>
+                </Link>
+
+               
+                <Typography
+                    variant="h4"
+                    sx={{
+                        color: 'black',
+                        textAlign: 'center'
+                    }}
+                >
+                    Articles List
+                </Typography>
+            </div>
+
+            
+            <div
+                style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    marginTop: '10px',
+                }}
+            >
+                <Typography variant="h5" sx={{ color: 'blue' }}>
+                    {articles.length} {articles.length === 1 ? 'Article' : 'Articles'} Found
+                </Typography>
+    </div>
+          </div>
       
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 3 }}>
         {articles.length > 0 ? (
