@@ -47,15 +47,20 @@ Depending on which button the user selects, the corresponding form is dynamicall
 
 When the user selects Create Article, the following fields appear in the form:
 
-Article ID: A unique, auto-generated identifier for each article (non-editable).
-Article Title: Editable text input.
-Article Summary: Editable textarea.
-Article Date: Editable date input.
-Publisher: Editable text input.
+* Article ID: A unique, auto-generated identifier for each article (non-editable).
+* Article Title: Editable text input.
+* Article Summary: Editable textarea.
+* Article Date: Editable date input.
+* Publisher: Editable text input.
+
+
 The application validates the form:
 
 Ensures all fields are filled; otherwise, an error message is displayed.
+
 Checks if an article with the same Title, Date, and Publisher already exists in the database. If a matching article is found, the app displays an alert showing the existing article's ID and suggests switching to Update Article.
+
+
 If no matching article exists, the new article is saved in the database with a unique Article ID, and the form is cleared for the next entry.
 
 **Update Article Logic:**
